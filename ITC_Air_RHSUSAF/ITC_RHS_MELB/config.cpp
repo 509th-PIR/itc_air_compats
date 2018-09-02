@@ -32,3 +32,16 @@ class cfgVehicles {
 		class itc_air : ITC_Air_Config_MELB {};
 	};
 };
+
+class cfgMagazines {
+	class PylonRack_7Rnd_Rocket_04_HE_F;
+	class itc_hp_dumb_rocket_Rocket_04_HE_F : PylonRack_7Rnd_Rocket_04_HE_F {
+		hardpoints[] += {"RHS_HP_MELB"};
+	};
+	class itc_hp_dumb_rocket_ITC_ammo_apkws_m151 : PylonRack_7Rnd_Rocket_04_HE_F {
+		hardpoints[] += {"RHS_HP_MELB"};
+	};
+	class itc_hp_dumb_rocket_itc_ammo_Hydra_M156 : PylonRack_7Rnd_Rocket_04_HE_F {
+		hardpoints[] += {"RHS_HP_MELB"};
+	};
+};
