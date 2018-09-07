@@ -14,7 +14,7 @@ class ITC_Air_Config_F14 {
 	};
 	targeting_user = "pilot";
 	wso = 1;
-	systems[] = {"UFC","SOI","TAXI","DSMS","MFD","MFD_L","MFD_R","AUTOPILOT","AP-MAN","FCS","GCAS","TGP","WPT"};
+	systems[] = {"UFC","SOI","TAXI","DSMS","MFD","MFD_L","MFD_R","AUTOPILOT","AP-MAN","FCS","GCAS","TGP","WPT","HUD"};
 	mfdApps[] = {"DSMS","TGP","STAT","STPT","OPT"};
 	mfdType = "classic";
 };

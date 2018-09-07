@@ -17,7 +17,7 @@ class ITC_Air_Config_FIR_A10C {
   wso = 0;
   hmd = 1;
   mfdApps[] = {"DSMS","TGP","STAT","TAD","STPT","OPT","MAV"};
-  systems[] = {"UFC","SOI","TAXI","DSMS","MAVERICK","MFD","MFD_L","MFD_R","HMD","AUTOPILOT","ROVER","SADL","FCS","ACMI","GCAS","TGP","WPT","TAD"};
+  systems[] = {"UFC","SOI","TAXI","DSMS","MAVERICK","MFD","MFD_L","MFD_R","HMD","AUTOPILOT","ROVER","SADL","FCS","ACMI","GCAS","TGP","WPT","TAD","HUD"};
   mfdType = "classic";
 };
 

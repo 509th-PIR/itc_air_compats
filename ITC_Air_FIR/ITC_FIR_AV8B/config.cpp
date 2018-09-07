@@ -16,7 +16,7 @@ class ITC_Air_Config_FIR_AV8B {
     wso = 0;
   	hmd = 1;
     mfdApps[] = {"DSMS","TGP","STAT","TAD","STPT","OPT","MAV","FCR"};
-    systems[] = {"UFC","SOI","TAXI","DSMS","MAVERICK","FCR","MFD","MFD_L","MFD_R","AUTOPILOT","AP-MAN","ROVER","SADL","FCS","ACMI","GCAS","TGP","WPT","TAD"};
+    systems[] = {"UFC","SOI","TAXI","DSMS","MAVERICK","FCR","MFD","MFD_L","MFD_R","AUTOPILOT","AP-MAN","ROVER","SADL","FCS","ACMI","GCAS","TGP","WPT","TAD","HUD"};
     mfdType = "classic";
 };
 
