@@ -22,7 +22,10 @@ class ITC_Air_Config_F14 {
 class cfgVehicles {
 	class FIR_F14D_Base;
 	class FIR_F14D: FIR_F14D_Base {
-		class itc_air : ITC_Air_Config_F14 {};
+		class itc_air_driver : ITC_Air_Config_F14 {};
+		class itc_air_gunner : ITC_Air_Config_F14 {
+		systems[] = {"UFC","SOI","TAXI","DSMS","MFD","MFD_L","MFD_R","AP-MAN","FCS","TGP","WPT"};
+		};
 	};
 };
 

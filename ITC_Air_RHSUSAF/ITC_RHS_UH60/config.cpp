@@ -24,7 +24,8 @@ class ITC_Air_Config_RHS_UH60M {
 class cfgVehicles {
 	class RHS_UH60M_US_base;
   class RHS_UH60M: RHS_UH60M_US_base {
-    class itc_air : ITC_Air_Config_RHS_UH60M{};
+    class itc_air_driver : ITC_Air_Config_RHS_UH60M{};
+    class itc_air_turret_0 : ITC_Air_Config_RHS_UH60M{};
 	};
 };
 

@@ -16,8 +16,8 @@ class ITC_Air_Config_RHS_F22 {
   tgp = 0;
   wso = 0;
   hmd = 1;
-  mfdApps[] = {"DSMS","STAT","TAD","STPT","OPT"};
-  systems[] = {"UFC","SOI","TAXI","DSMS","MFD","MFD_L","MFD_R","HMD","AUTOPILOT","SADL","FCS","ACMI","GCAS","WPT","TAD","HUD"};
+  mfdApps[] = {"DSMS","STAT","TAD","STPT","OPT","EW"};
+  systems[] = {"UFC","SOI","TAXI","DSMS","MFD","MFD_L","MFD_R","HMD","AUTOPILOT","SADL","FCS","ACMI","GCAS","WPT","TAD","HUD","EW"};
   mfdType = "classic";
 };
 

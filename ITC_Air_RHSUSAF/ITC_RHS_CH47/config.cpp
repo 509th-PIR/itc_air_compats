@@ -24,7 +24,8 @@ class ITC_Air_Config_RHS_CH_47F {
 class cfgVehicles {
 	class RHS_CH_47F_base;
   class RHS_CH_47F: RHS_CH_47F_base {
-    class itc_air : ITC_Air_Config_RHS_CH_47F {};
+    class itc_air_driver : ITC_Air_Config_RHS_CH_47F {};
+    class itc_air_turret_0 : ITC_Air_Config_RHS_CH_47F {};
 	};
 };
 

@@ -9,8 +9,9 @@ class cfgPatches {
 
 class ITC_Air_Config_MELB {
 	class rover {
+		turret = 0;
 		capable = 1;
-	frequency_default = 5784;
+		frequency_default = 5784;
 	};
 	targeting_user = "pilot";
 	tgp = 0;
@@ -23,13 +24,22 @@ class ITC_Air_Config_MELB {
 class cfgVehicles {
 	class RHS_MELB_base;
 	class RHS_MELB_AH6M: RHS_MELB_base {
-		class itc_air : ITC_Air_Config_MELB {};
+		class itc_air_driver : ITC_Air_Config_MELB {};
+		class itc_air_turret_0 : ITC_Air_Config_MELB {
+			systems[] = {"UFC","SOI","MFD","MFD_R","ACMI","TAD","WPT","ROVER"};
+		};
 	};
 	class RHS_MELB_MH6M: RHS_MELB_base {
-		class itc_air : ITC_Air_Config_MELB {};
+		class itc_air_driver : ITC_Air_Config_MELB {};
+		class itc_air_turret_0 : ITC_Air_Config_MELB {
+			systems[] = {"UFC","SOI","MFD","MFD_R","ACMI","TAD","WPT","ROVER"};
+		};
 	};
 	class RHS_MELB_H6M: RHS_MELB_base {
-		class itc_air : ITC_Air_Config_MELB {};
+		class itc_air_driver : ITC_Air_Config_MELB {};
+		class itc_air_turret_0 : ITC_Air_Config_MELB {
+			systems[] = {"UFC","SOI","MFD","MFD_R","ACMI","TAD","WPT","ROVER"};
+		};
 	};
 };
 

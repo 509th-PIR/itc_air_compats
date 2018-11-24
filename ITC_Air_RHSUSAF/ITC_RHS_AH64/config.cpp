@@ -9,6 +9,7 @@ class cfgPatches {
 
 class ITC_Air_Config_AH64 {
   class rover {
+    turret = 0;
     capable = 1;
     frequency_default = 5784;
   };
@@ -24,7 +25,10 @@ class ITC_Air_Config_AH64 {
 class cfgVehicles {
 	class RHS_AH64_base;
   class RHS_AH64D: RHS_AH64_base {
-    class itc_air : ITC_Air_Config_AH64 {};
+    class itc_air_driver : ITC_Air_Config_AH64 {};
+    class itc_air_gunner : ITC_Air_Config_AH64 {
+      systems[] = {"UFC","ROVER","SOI","MFD","MFD_R","SADL","ACMI","TAD","MFD_L","WPT","ROVER"};
+    };
 	};
 };
 

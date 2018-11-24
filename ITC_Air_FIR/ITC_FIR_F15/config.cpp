@@ -8,12 +8,13 @@ class cfgPatches {
 };
 class ITC_Air_Config_FIR_F15E {
     class rover {
-        capable = 1;
-		frequency_default = 5784;
+      turret = -1;
+      capable = 1;
+      frequency_default = 5784;
     };
     targeting_user = "pilot";
     tgp = 1;
-    wso = 1;
+    wso = 0;
   	hmd = 1;
     mfdApps[] = {"DSMS","TGP","STAT","TAD","STPT","OPT","MAV","FCR"};
     systems[] = {"UFC","SOI","TAXI","DSMS","MAVERICK","FCR","MFD","MFD_L","MFD_R","HMD","AUTOPILOT","AP-MAN","ROVER","SADL","FCS","ACMI","GCAS","AGCAS","TGP","WPT","TAD","HUD"};
@@ -26,6 +27,10 @@ class cfgVehicles {
   class FIR_F15E: FIR_F15E_Base {
     class pilotCamera : litening { };
     class itc_air : ITC_Air_Config_FIR_F15E {};
+    class itc_air_turret_0 : ITC_Air_Config_FIR_F15E {
+      wso = 1;
+      systems[] = {"UFC","SOI","TAXI","DSMS","MAVERICK","FCR","MFD","MFD_L","MFD_R","HMD","SADL","FCS","ACMI","TGP","WPT","TAD","EW"};
+    };
 	};
 };
 

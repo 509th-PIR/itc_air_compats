@@ -8,15 +8,16 @@ class cfgPatches {
 };
 class ITC_Air_Config_FIR_F16C {
     class rover {
-        capable = 1;
-		frequency_default = 5784;
+      turret = -1;
+      capable = 1;
+  		frequency_default = 5784;
     };
     targeting_user = "pilot";
     tgp = 1;
     wso = 0;
   	hmd = 1;
-    mfdApps[] = {"DSMS","TGP","STAT","TAD","STPT","OPT","MAV","FCR"};
-    systems[] = {"UFC","SOI","TAXI","DSMS","MAVERICK","FCR","MFD","MFD_L","MFD_R","HMD","AUTOPILOT","AP-MAN","ROVER","SADL","FCS","ACMI","GCAS","AGCAS","TGP","WPT","TAD","HUD"};
+    mfdApps[] = {"DSMS","TGP","STAT","TAD","STPT","OPT","MAV","FCR","EW"};
+    systems[] = {"UFC","SOI","TAXI","DSMS","MAVERICK","FCR","MFD","MFD_L","MFD_R","HMD","AUTOPILOT","AP-MAN","ROVER","SADL","FCS","ACMI","GCAS","AGCAS","TGP","WPT","TAD","HUD","EW"};
     mfdType = "classic";
 };
 
@@ -31,6 +32,10 @@ class cfgVehicles {
   class FIR_F16D: FIR_F16D_Base {
     class pilotCamera : litening { };
     class itc_air : ITC_Air_Config_FIR_F16C {};
+    class itc_air_turret_0 : ITC_Air_Config_FIR_F16C {
+      wso = 1;
+      systems[] = {"UFC","SOI","TAXI","DSMS","MAVERICK","FCR","MFD","MFD_L","MFD_R","HMD","SADL","FCS","ACMI","TGP","WPT","TAD","EW"};
+    };
 	};
 };
 
@@ -52,6 +57,9 @@ class cfgMagazines {
 	class itc_hp_smart_ITC_ammo_gbu32 : PylonMissile_1Rnd_Mk82_F {
 		hardpoints[] += {"FIR_F16_Combined_HP","FIR_F16_AG_HP"};
 	};
+	class itc_hp_smart_ITC_ammo_gbu31 : PylonMissile_1Rnd_Mk82_F {
+		hardpoints[] += {"FIR_F16_Combined_HP","FIR_F16_AG_HP"};
+	};
 
   class PylonRack_2Rnd_BombCluster_03_F;
   class itc_hp_bru55_ITC_ammo_gbu38 : PylonRack_2Rnd_BombCluster_03_F {
@@ -67,9 +75,6 @@ class cfgMagazines {
 		hardpoints[] += {"FIR_F16_Combined_HP","FIR_F16_AG_HP"};
 	};
 	class itc_hp_bru55_ITC_ammo_gbu32 : PylonRack_2Rnd_BombCluster_03_F {
-		hardpoints[] += {"FIR_F16_Combined_HP","FIR_F16_AG_HP"};
-	};
-	class itc_hp_smart_ITC_ammo_gbu31 : PylonRack_2Rnd_BombCluster_03_F {
 		hardpoints[] += {"FIR_F16_Combined_HP","FIR_F16_AG_HP"};
 	};
 
